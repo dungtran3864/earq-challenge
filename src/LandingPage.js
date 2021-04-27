@@ -1,6 +1,5 @@
-import { Container, Box, Typography, Grid } from "@material-ui/core";
+import { Container, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import OticonHeader from "./img/oticon-header.jpg";
 import LeftSection from "./common/LeftSection";
 import OticonSub1 from "./img/oticon-sub1.webp";
 import RightSection from "./common/RightSection";
@@ -9,43 +8,13 @@ import OticonSub3 from "./img/oticon-sub3.webp";
 import OticonSub4 from "./img/oticon-sub4.webp";
 import OticonFooter1 from "./img/oticon-footer1.webp";
 import OticonFooter2 from "./img/oticon-footer2.webp";
-import FooterHalfSection from "./common/FooterHalfSection";
-import CustomButton from "./common/CustomButton";
-import CustomButtonAlt from "./common/CustomButtonAlt";
+import HalfSection from "./common/HalfSection";
+import Header from "./common/Header";
+import Footer from "./common/Footer";
 
 const useStyles = makeStyles((theme) => ({
-  headerContainer: {
-    backgroundColor: "#C7168D",
-    padding: theme.spacing(10),
-  },
-  header: {
-    fontSize: "2rem",
-    fontWeight: "bold",
-    color: "white",
-  },
-  subHeader: {
-    fontSize: "1.25rem",
-    fontWeight: "bold",
-    color: "white",
-  },
-  headerDescription: {
-    fontSize: "1rem",
-    color: "white",
-  },
-  headerImage: {
-    height: "20rem",
-    borderRadius: 20,
-  },
-  footerContainer: {
+  halfSection: {
     marginTop: theme.spacing(3),
-  },
-  bottom: {
-    backgroundColor: "#C7168D",
-    marginTop: theme.spacing(6),
-    padding: theme.spacing(6),
-  },
-  bottomButton: {
-    marginTop: theme.spacing(2),
   },
 }));
 
@@ -54,37 +23,7 @@ function LandingPage() {
 
   return (
     <div>
-      <Box className={classes.headerContainer}>
-        <Container>
-          <Grid
-            container
-            spacing={10}
-            direction={"row"}
-            justify={"center"}
-            alignItems={"center"}
-          >
-            <Grid item xs={12} sm={12} lg={6}>
-              <Typography className={classes.header}>
-                Introducing Oticon More™
-              </Typography>
-              <Typography className={classes.subHeader}>
-                It’s time to get more out of life
-              </Typography>
-              <Typography className={classes.headerDescription}>
-                Oticon More is the hearing aid with built-in intelligence to
-                make more sense of sound.
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={12} lg={6}>
-              <img
-                src={OticonHeader}
-                alt={"oticon-header"}
-                className={classes.headerImage}
-              />
-            </Grid>
-          </Grid>
-        </Container>
-      </Box>
+      <Header />
       <LeftSection
         title={"Designed to support your brain"}
         description={
@@ -120,10 +59,10 @@ function LandingPage() {
           container
           direction={"row"}
           spacing={10}
-          className={classes.footerContainer}
+          className={classes.halfSection}
         >
           <Grid item xs={12} sm={12} lg={6}>
-            <FooterHalfSection
+            <HalfSection
               description={
                 "Turn your Oticon More hearing aids into a wireless stereo headset with" +
                 "ConnectClip. ConnectClip uses Bluetooth® Low Energy technology to" +
@@ -137,7 +76,7 @@ function LandingPage() {
             />
           </Grid>
           <Grid item xs={12} sm={12} lg={6}>
-            <FooterHalfSection
+            <HalfSection
               description={
                 "Take back control and manage tinnitus symptoms with Tinnitus SoundSupport™. " +
                 "This feature offers a variety of relief sounds, including popular ocean‑like " +
@@ -150,28 +89,7 @@ function LandingPage() {
           </Grid>
         </Grid>
       </Container>
-      <Box className={classes.bottom}>
-        <Container>
-          <Grid
-            container
-            direction={"column"}
-            justify={"center"}
-            alignItems={"center"}
-          >
-            <Typography align={"center"} className={classes.header}>
-              Ready to get more out of life?
-            </Typography>
-            <Typography align={"center"} className={classes.subHeader}>
-              Sign up for a risk free-trial of Oticon More and experience the
-              revolutionary hearing aid designed to work like your brain.
-            </Typography>
-            <CustomButtonAlt
-              title={"Try Oticon More risk-free"}
-              className={classes.bottomButton}
-            />
-          </Grid>
-        </Container>
-      </Box>
+      <Footer />
     </div>
   );
 }

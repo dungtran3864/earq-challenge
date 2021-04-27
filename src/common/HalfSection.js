@@ -8,10 +8,10 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
   },
-  footerImage: {
+  image: {
     borderRadius: 10,
   },
-  footerTitle: {
+  title: {
     fontSize: "1.25rem",
     fontWeight: "bold",
     color: "#C7168D",
@@ -20,9 +20,12 @@ const useStyles = makeStyles((theme) => ({
   margin: {
     marginTop: theme.spacing(2),
   },
+  textBox: {
+    height: "12.5rem",
+  },
 }));
 
-function FooterHalfSection({ imageSrc, title, description, buttonTitle }) {
+function HalfSection({ imageSrc, title, description, buttonTitle }) {
   const classes = useStyles();
 
   return (
@@ -30,17 +33,19 @@ function FooterHalfSection({ imageSrc, title, description, buttonTitle }) {
       <img
         src={imageSrc}
         alt={"oticon-footer1"}
-        className={classes.footerImage}
+        className={classes.image}
       />
-      <Typography align={"center"} className={classes.footerTitle}>
-        {title}
-      </Typography>
-      <Typography align={"center"} className={classes.margin}>
-        {description}
-      </Typography>
+      <Box className={classes.textBox}>
+        <Typography align={"center"} className={classes.title}>
+          {title}
+        </Typography>
+        <Typography align={"center"} className={classes.margin}>
+          {description}
+        </Typography>
+      </Box>
       <CustomButton title={buttonTitle} className={classes.margin} />
     </Box>
   );
 }
 
-export default FooterHalfSection;
+export default HalfSection;
