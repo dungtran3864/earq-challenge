@@ -1,4 +1,4 @@
-import { Box, Typography } from "@material-ui/core";
+import { Box, Hidden, Typography } from "@material-ui/core";
 import CustomButton from "./CustomButton";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -31,14 +31,24 @@ function HalfSection({ imageSrc, title, description, buttonTitle, onClick }) {
   return (
     <Box className={classes.section}>
       <img src={imageSrc} alt={"oticon-footer1"} className={classes.image} />
-      <Box className={classes.textBox}>
+      <Hidden smDown>
+        <Box className={classes.textBox}>
+          <Typography align={"center"} className={classes.title}>
+            {title}
+          </Typography>
+          <Typography align={"center"} className={classes.margin}>
+            {description}
+          </Typography>
+        </Box>
+      </Hidden>
+      <Hidden mdUp>
         <Typography align={"center"} className={classes.title}>
           {title}
         </Typography>
         <Typography align={"center"} className={classes.margin}>
           {description}
         </Typography>
-      </Box>
+      </Hidden>
       <CustomButton
         title={buttonTitle}
         className={classes.margin}
