@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/earq-challenge/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/earq-challenge/static/js/main.f3722cad.chunk.js",
-    "main.js.map": "/earq-challenge/static/js/main.f3722cad.chunk.js.map",
+    "main.js": "/earq-challenge/static/js/main.6529d9f2.chunk.js",
+    "main.js.map": "/earq-challenge/static/js/main.6529d9f2.chunk.js.map",
     "runtime-main.js": "/earq-challenge/static/js/runtime-main.116ac273.js",
     "runtime-main.js.map": "/earq-challenge/static/js/runtime-main.116ac273.js.map",
     "static/js/2.e238f44d.chunk.js": "/earq-challenge/static/js/2.e238f44d.chunk.js",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.116ac273.js",
     "static/js/2.e238f44d.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.f3722cad.chunk.js"
+    "static/js/main.6529d9f2.chunk.js"
   ]
 }
