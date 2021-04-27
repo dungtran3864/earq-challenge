@@ -73,6 +73,10 @@ function LandingPage() {
               title={"Make everyday connections easier"}
               imageSrc={OticonFooter1}
               buttonTitle={"Learn more about ConnectClip"}
+              onClick={() =>
+                (window.location.href =
+                  "https://www.oticon.com/solutions/accessories/connectclip")
+              }
             />
           </Grid>
           <Grid item xs={12} sm={12} lg={6}>
@@ -85,6 +89,10 @@ function LandingPage() {
               title={"Tinnitus relief"}
               buttonTitle={"Learn more about Tinnitus"}
               imageSrc={OticonFooter2}
+              onClick={() =>
+                (window.location.href =
+                  "https://www.oticon.com/solutions/other-devices/tinnitus")
+              }
             />
           </Grid>
         </Grid>

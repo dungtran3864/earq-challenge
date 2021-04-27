@@ -43,6 +43,9 @@ function CustomButtonAlt({ title, className }) {
       variant="contained"
       color="#f6f6f6"
       disableRipple
+      onClick={() =>
+        (window.location.href = "https://www.oticon.com/risk-free-trial-more")
+      }
     >
       <Typography className={classes.title}>{title}</Typography>
     </BootstrapButton>

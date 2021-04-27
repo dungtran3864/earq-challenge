@@ -25,16 +25,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function HalfSection({ imageSrc, title, description, buttonTitle }) {
+function HalfSection({ imageSrc, title, description, buttonTitle, onClick }) {
   const classes = useStyles();
 
   return (
     <Box className={classes.section}>
-      <img
-        src={imageSrc}
-        alt={"oticon-footer1"}
-        className={classes.image}
-      />
+      <img src={imageSrc} alt={"oticon-footer1"} className={classes.image} />
       <Box className={classes.textBox}>
         <Typography align={"center"} className={classes.title}>
           {title}
@@ -43,7 +39,11 @@ function HalfSection({ imageSrc, title, description, buttonTitle }) {
           {description}
         </Typography>
       </Box>
-      <CustomButton title={buttonTitle} className={classes.margin} />
+      <CustomButton
+        title={buttonTitle}
+        className={classes.margin}
+        onClick={onClick}
+      />
     </Box>
   );
 }

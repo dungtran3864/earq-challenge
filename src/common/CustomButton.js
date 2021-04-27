@@ -27,9 +27,15 @@ const BootstrapButton = withStyles({
   },
 })(Button);
 
-function CustomButton({ title, className }) {
+function CustomButton({ title, className, onClick }) {
   return (
-    <BootstrapButton className={className} variant="contained" color="primary" disableRipple>
+    <BootstrapButton
+      onClick={onClick}
+      className={className}
+      variant="contained"
+      color="primary"
+      disableRipple
+    >
       {title}
     </BootstrapButton>
   );

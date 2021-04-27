@@ -51,7 +51,14 @@ function RightSection({ title, description, imageSrc }) {
             <Grid item xs={12} sm={12} lg={6}>
               <Typography className={classes.title}>{title}</Typography>
               <Typography className={classes.margin}>{description}</Typography>
-              <CustomButton className={classes.margin} title={"Learn more"} />
+              <CustomButton
+                className={classes.margin}
+                title={"Learn more"}
+                onClick={() =>
+                  (window.location.href =
+                    "https://www.oticon.com/solutions/more-hearing-aids")
+                }
+              />
             </Grid>
             <Grid item xs={12} sm={12} lg={6}>
               <Grid container justify={"center"}>
@@ -82,7 +89,14 @@ function RightSection({ title, description, imageSrc }) {
             <Typography align={"center"} className={classes.margin}>
               {description}
             </Typography>
-            <CustomButton className={classes.margin} title={"Learn more"} />
+            <CustomButton
+              className={classes.margin}
+              title={"Learn more"}
+              onClick={() =>
+                (window.location.href =
+                  "https://www.oticon.com/solutions/more-hearing-aids")
+              }
+            />
           </Grid>
         </Hidden>
       </Container>
