@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/earq-challenge/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/earq-challenge/static/js/main.f3722cad.chunk.js",
+    "main.js.map": "/earq-challenge/static/js/main.f3722cad.chunk.js.map",
+    "runtime-main.js": "/earq-challenge/static/js/runtime-main.116ac273.js",
+    "runtime-main.js.map": "/earq-challenge/static/js/runtime-main.116ac273.js.map",
+    "static/js/2.e238f44d.chunk.js": "/earq-challenge/static/js/2.e238f44d.chunk.js",
+    "static/js/2.e238f44d.chunk.js.map": "/earq-challenge/static/js/2.e238f44d.chunk.js.map",
+    "static/js/3.1d1fd587.chunk.js": "/earq-challenge/static/js/3.1d1fd587.chunk.js",
+    "static/js/3.1d1fd587.chunk.js.map": "/earq-challenge/static/js/3.1d1fd587.chunk.js.map",
+    "index.html": "/earq-challenge/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/earq-challenge/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.e238f44d.chunk.js.LICENSE.txt": "/earq-challenge/static/js/2.e238f44d.chunk.js.LICENSE.txt",
+    "static/media/oticon-footer1.e1d096a3.webp": "/earq-challenge/static/media/oticon-footer1.e1d096a3.webp",
+    "static/media/oticon-footer2.ed9dbaa9.webp": "/earq-challenge/static/media/oticon-footer2.ed9dbaa9.webp",
+    "static/media/oticon-header.b96bbfa7.jpg": "/earq-challenge/static/media/oticon-header.b96bbfa7.jpg",
+    "static/media/oticon-sub1.36ba646a.webp": "/earq-challenge/static/media/oticon-sub1.36ba646a.webp",
+    "static/media/oticon-sub2.7e980394.webp": "/earq-challenge/static/media/oticon-sub2.7e980394.webp",
+    "static/media/oticon-sub3.922d3d11.webp": "/earq-challenge/static/media/oticon-sub3.922d3d11.webp",
+    "static/media/oticon-sub4.2d57abf0.webp": "/earq-challenge/static/media/oticon-sub4.2d57abf0.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.116ac273.js",
+    "static/js/2.e238f44d.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.f3722cad.chunk.js"
+  ]
+}
